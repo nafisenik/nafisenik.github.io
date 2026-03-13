@@ -1,34 +1,46 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"kargaran":
+  - firstname: ["Amir Hossein", "Amir H.", "A. H.", "A H"]
+    url: https://kargaranamir.github.io/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"diesner":
+  - firstname: ["Jana", "J."]
+    url: https://www.professoren.tum.de/en/diesner-jana
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"heydarnoori":
+  - firstname: ["Abbas", "A."]
+    url: https://sharif.edu/~heydarnoori/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"schütze":
+  - firstname: ["Hinrich", "H."]
+    url: https://www.cis.uni-muenchen.de/schuetze/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"schutze":
+  - firstname: ["Hinrich", "H."]
+    url: https://www.cis.uni-muenchen.de/schuetze/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"yvon":
+  - firstname: ["François", "Francois", "F."]
+    url: https://perso.limsi.fr/yvon/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"modarressi":
+  - firstname: ["Ali", "A."]
+    url: https://amodaresi.github.io/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"ousidhoum":
+  - firstname: ["Nedjma", "N."]
+    url: https://nedjmaou.github.io/
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"kolli":
+  - firstname: ["Sepehr", "S."]
+
+"you":
+  - firstname: ["Zhuoran", "Z."]
+
+"cavelius":
+  - firstname: ["Till", "T."]
+
+"dalal":
+  - firstname: ["Sohaib", "S."]
+
+"yang":
+  - firstname: ["Jiaxin", "J."]

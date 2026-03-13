@@ -1,9 +1,18 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"ACL":
+  url: https://aclanthology.org/
+  color: "#c0392b"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"EMNLP":
+  url: https://aclanthology.org/
+  color: "#8e44ad"
 
-"Vision":
-  color: "#009f36"
+"MSR":
+  url: https://conf.researchr.org/series/msr
+  color: "#2980b9"
+
+"ICML-W":
+  url: https://icml.cc/
+  color: "#16a085"
+
+"Preprint":
+  color: "#7f8c8d"

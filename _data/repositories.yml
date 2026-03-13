@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - nafisenik
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - nafisenik/CoBia
+  - cisnlp/MEXA
+  - kargaranamir/GIRT-Model
+  - kargaranamir/GIRT-Data
