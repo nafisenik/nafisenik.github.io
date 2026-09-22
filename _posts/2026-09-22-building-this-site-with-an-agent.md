@@ -26,18 +26,3 @@ I did not write a spec. I pointed it at the repo and my CV and described the goa
 2. **"Use this photo for the profile picture."** I pasted an image. It resized the image and put it in the right place.
 3. **"The CI is failing — here is the log."** I pasted the red GitHub Actions output. It read the error, explained why (a CV-rendering action with a stricter schema than the site itself), and fixed it.
 4. **"The blog has too many posts and isn't in the top menu. Clear it out, add it to the nav, and write one post about this."** That is the post you are reading.
-
-## What made it easy
-
-A few things stood out:
-
-- **Let it read first.** The most useful instruction was "read the whole repo before changing anything." al-folio has a lot of connected config. An agent that understands the structure makes much better edits than one that guesses.
-- **Give it ground truth.** My CV as a PDF and a link to Google Scholar were enough to get names, venues, and dates right. When it was unsure, it searched the web and asked me to confirm a few details instead of making them up.
-- **Paste the errors.** When the build or CI complained, pasting the raw log was faster than describing the problem. The agent could read it and find the cause.
-- **Small, clear asks.** "Newest first," "don't change the layout," "hide the lab-members page." Short, concrete instructions worked better than one long paragraph.
-
-## The honest caveats
-
-It is not magic. I still checked everything: dates, author lists, and which papers to mark as _selected_. The agent flagged what it had guessed so I could check it, which is what you want. Treat it as a very fast, very literal helper, not an oracle.
-
-If you have been putting off your own academic site: pick al-folio, open the repo with an agent, hand it your CV, and start describing what you want. That is most of the work.

@@ -1,46 +1,38 @@
 "kargaran":
   - firstname: ["Amir Hossein", "Amir H.", "A. H.", "A H"]
-    url: https://kargaranamir.github.io/
 
 "diesner":
   - firstname: ["Jana", "J."]
-    url: https://www.professoren.tum.de/en/diesner-jana
 
 "heydarnoori":
   - firstname: ["Abbas", "A."]
-    url: https://sharif.edu/~heydarnoori/
 
 "schütze":
   - firstname: ["Hinrich", "H."]
-    url: https://www.cis.uni-muenchen.de/schuetze/
 
 "schutze":
   - firstname: ["Hinrich", "H."]
-    url: https://www.cis.uni-muenchen.de/schuetze/
 
 "yvon":
   - firstname: ["François", "Francois", "F."]
-    url: https://perso.limsi.fr/yvon/
 
 "modarressi":
   - firstname: ["Ali", "A."]
-    url: https://amodaresi.github.io/
 
 "ousidhoum":
   - firstname: ["Nedjma", "N."]
-    url: https://nedjmaou.github.io/
 
 "kolli":
-  - firstname: ["Sepehr", "S."]
+  - firstname: ["Shaghayegh", "S."]
 
 "you":
   - firstname: ["Zhuoran", "Z."]
 
 "cavelius":
-  - firstname: ["Till", "T."]
+  - firstname: ["Timo", "T."]
 
 "dalal":
-  - firstname: ["Sohaib", "S."]
+  - firstname: ["Samantha", "S."]
 
 "yang":
   - firstname: ["Jiaxin", "J."]
