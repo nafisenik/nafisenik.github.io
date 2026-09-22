@@ -1,0 +1,61 @@
+name: Cleanup old workflow runs
+
+# Manually deletes GitHub Actions runs to keep the Actions tab clean.
+# By default it deletes ALL runs (keep = 0), including this workflow's own past
+# runs and "orphan" runs whose workflow file was deleted. The only run left
+# afterwards is the one currently executing this cleanup (GitHub does not allow
+# a run to delete itself), plus any still in progress (those cannot be deleted).
+# Set the `keep` input to a number to retain that many most-recent runs per
+# workflow instead. Deletion is permanent and cannot be undone.
+
+on:
+  workflow_dispatch:
+    inputs:
+      keep:
+        description: "How many recent runs to keep per workflow (0 = delete all)"
+        required: false
+        default: "0"
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete runs
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const keep = parseInt(context.payload.inputs?.keep ?? '0', 10) || 0;
+            const { owner, repo } = context.repo;
+
+            // Repo-wide listing catches orphan runs (from deleted workflows) too.
+            const runs = await github.paginate(
+              github.rest.actions.listWorkflowRunsForRepo,
+              { owner, repo, per_page: 100 }
+            );
+
+            // Group by workflow so `keep` applies per workflow.
+            const groups = {};
+            for (const run of runs) {
+              (groups[run.workflow_id] ??= []).push(run);
+            }
+
+            let deleted = 0, skipped = 0;
+            for (const list of Object.values(groups)) {
+              list.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+              const toDelete = list.slice(keep);
+              for (const run of toDelete) {
+                if (run.id === context.runId) { skipped++; continue; }   // never delete ourselves
+                if (run.status !== 'completed') { skipped++; continue; }  // in-progress can't be deleted
+                try {
+                  await github.rest.actions.deleteWorkflowRun({ owner, repo, run_id: run.id });
+                  deleted++;
+                } catch (e) {
+                  core.warning(`Failed to delete run ${run.id}: ${e.message}`);
+                }
+              }
+            }
+            core.info(`Done. Deleted ${deleted} run(s), skipped ${skipped}.`);
