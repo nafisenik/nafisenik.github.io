@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Answer Instability in LLMs
+title: Who Flips?
 description: Self- and cross-model counterarguments reveal answer instability in LLMs (Findings of EMNLP 2026).
 img:
 importance: 4

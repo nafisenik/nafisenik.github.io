@@ -1,15 +1,11 @@
 name: Render a CV
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - "_data/cv.yml"
-      - "assets/rendercv/design.yaml"
-      - "assets/rendercv/locale.yaml"
-      - "assets/rendercv/settings.yaml"
-  workflow_call:
+  # Auto-generation of a CV PDF via RenderCV is intentionally disabled.
+  # This site serves a hand-maintained CV PDF (see _pages/cv.md -> cv_pdf),
+  # and the /cv/ page renders directly from _data/cv.yml via Jekyll/Liquid.
+  # The RenderCV tool uses a stricter, different schema than the al-folio CV
+  # includes, so it is left as manual-only. Re-enable the push trigger only
+  # after converting _data/cv.yml to the strict RenderCV schema.
   workflow_dispatch:
 permissions:
   contents: write
